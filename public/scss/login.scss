@@ -1,0 +1,114 @@
+@import '_font';
+@import '_variable';
+
+
+body{
+	background: #ddd;
+	font-family: $font-stack;
+	font-size: 16px;
+}
+
+.form-login{
+	background: #fff;
+	box-shadow: 0 2px 7px rgba(0,0,0,.2);
+	border-radius: 5px;
+	border-top: 3px solid $primary-color;
+	width: 99%;
+	margin: auto;
+	padding: 15px;
+	@media(min-width: 500px){
+		width: 450px;
+		margin-top: 5%;
+	}
+	form{
+		margin-bottom: 40px;
+	}
+	.control{
+		position: relative;
+		i{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 15px;
+			color: #ccc;
+		}
+		input{
+			width: 100%;
+			border: 1px solid #ccc;
+			padding: 7px 12px 7px 35px;
+			border-radius: 10px;
+			border-left: 2px solid $primary-color;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+
+	.form-group{
+		margin: 10px 0;
+	}
+
+	.control-signup{
+		input{
+			width: 100%;
+			border: 1px solid #ccc;
+			padding: 7px 12px;
+			border-radius: 10px;
+			border-left: 2px solid $primary-color;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+
+	button{
+		width: 100%;
+		border: 0;
+		background: $primary-color;
+		color: #fff;
+		text-align: center;
+		padding: 7px;
+		border-radius: 10px;
+		border-left: 2px solid #f7f70c;
+		border-right: 2px solid #f7f70c;
+	}
+
+	.social{
+		display: block;
+		padding: 7px 12px;
+		margin-top: 15px;
+		color: #fff;
+		border-radius: 10px;
+		position: relative;
+		padding-left: 40px;
+		&:hover{
+			text-decoration: none;
+		}
+		i{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 15px;
+		}
+	}
+
+	.social-facebook{
+		background: #3b5998;
+		&:hover{
+			background: #3b5977;
+		}
+	}
+
+	.social-google{
+		background: #d34836;
+		&:hover{
+			background: #d34800;
+		}
+	}
+}
+
+.help-block{
+	strong{
+		color: #f00;
+	}
+}
